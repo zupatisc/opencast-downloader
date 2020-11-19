@@ -149,7 +149,7 @@ def format_error(d,exc=None):
         import traceback
         traceback.print_exc(file=out)
         out.write("\n")
-    out.write(json.dumps(d))
+    out.write(json.dumps(d, indent=4))
     print('The output has been saved to '+out.name+'.')
     print('Please open an issue on GitHub and send this file to my e-mail '+
         'address (to be found on my GitHub page) so I can try and help.')
